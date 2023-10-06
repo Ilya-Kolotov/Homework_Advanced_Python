@@ -21,4 +21,4 @@ def batch_rename(new_name, digits, source_ext, dest_ext, range_name, path='.'):
             os.rename(os.path.join(path, filename), os.path.join(path, new_filename))
             counter += 1
 
-batch_rename('new_file', 3, '.md', '.txt', [1, 3], '.\Test')
+batch_rename('new_file', 3, '.md', '.txt', [1, 3], '.\Test1')

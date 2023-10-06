@@ -33,5 +33,5 @@ def sorted_files(source_dir: str):
         shutil.move(source_path, destination_path)
 
 
-source_dir = '.\Test'
+source_dir = '.\Test1'
 sorted_files(source_dir)
