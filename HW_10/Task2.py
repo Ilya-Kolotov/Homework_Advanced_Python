@@ -25,16 +25,16 @@ class Matrix:
         self.columns = count_columns
         self.matrix = [[random.randint(1, 100) for i in range(self.rows)] for j in range(self.columns)]
 
-    def print_matrix(self):
-        return self.matrix
-
     def trans_matrix_zip(self):
         return list(zip(*self.matrix))
 
 
 matrix1 = Matrix(5, 5)
-print(matrix1.print_matrix())
-print(matrix1.trans_matrix_zip())
+for i in matrix1.matrix:
+    print(i)
+print('=======')
+for i in matrix1.trans_matrix_zip():
+    print(i)
 
 triangle1 = Triangle(10, 10, 8)
 triangle2 = Triangle(10, 10, 10)
