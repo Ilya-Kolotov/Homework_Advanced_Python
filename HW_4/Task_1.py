@@ -11,10 +11,18 @@ def transpose_matrix(matrix: list) -> list:
             result[i][j] = matrix[j][i]
     return result
 
-matrix = [[1,2,3],[3,4,5],[3,4,5]]
+
+def trans_matrix_zip(matrix: list):
+    return list(zip(*matrix))
+
+matrix = [[99, 72, 11, 93], [24, 36, 33, 60], [97, 81, 91, 39], [97, 43, 75, 85], [29, 56, 33, 68]]
 for i in matrix:
     print(i)
 transposed_matrix = transpose_matrix(matrix)
+print('===========')
+for i in transposed_matrix:
+    print(i)
+transposed_matrix = trans_matrix_zip(matrix)
 print('===========')
 for i in transposed_matrix:
     print(i)
